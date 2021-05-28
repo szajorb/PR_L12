@@ -6,7 +6,10 @@ import Home from "./components/home";
 import LoginForm from "./components/loginForm";
 import NavBar from "./components/common/navbar";
 
+
+
 function App() {
+
   return (
       <div className="container-fluid">
         <NavBar />
@@ -14,7 +17,7 @@ function App() {
             <div className="content">
                 <Switch>
                     <Route path="/login" component={LoginForm} />
-                    <Route path="/posts" component={Posts}/>
+                    <Route path="/posts" component={Posts} />
                     <Route path="/not-found" component={NotFound} />
                     <Route path="/" exact component={Home} />
                     <Redirect to="/not-found" />
